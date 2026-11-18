@@ -41,10 +41,13 @@ Java·Spring으로 웹 백엔드를 만들고, C++ IOCP로 게임 서버를 공�
 
 KB IT's Your Life 7기 팀 프로젝트 · 팀장 · [서비스 바로가기](https://www.teenymoney2.kro.kr)
 
+![TeenyMoney 프로젝트 한 장 요약](assets/teenymoney-summary.png)
+
 - **공통 기반**: Spring MVC 프로젝트 구조, 공통 API 응답과 예외 처리, MyBatis·MySQL 연동
 - **인증**: Spring Security + JWT, Redis에 Refresh Token을 저장해 토큰 재발급과 로그아웃 구현
 - **회원·가족 연동**: 회원가입·로그인, 법정대리인 동의, S3 프로필 이미지 업로드, 부모와 자녀 연동
-- **기능**: 퀘스트, 머니리포트
+- **퀘스트**: 부모가 퀘스트를 만들고, 자녀가 수행에 성공하면 용돈과 티니점수를 받는 기능
+- **머니리포트**: 이번 달 소비 패턴을 한눈에 보여 주는 기능
 - **인프라**: AWS EC2에 Nginx와 Tomcat 연결, MySQL·Redis는 Docker 컨테이너로 운영, HTTPS 적용
 - **협업 환경**: GitHub Issue·PR 템플릿, GitHub Actions 기반 CI
 - **이전**: AWS 이용 기간이 끝난 뒤 서비스를 Oracle Cloud(OCI)로 이전
