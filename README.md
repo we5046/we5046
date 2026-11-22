@@ -5,6 +5,7 @@ Java·Spring으로 웹 백엔드를 만들고, C++ IOCP로 게임 서버를 공�
 
 ## 지금 하는 것
 
+- 개인 프로젝트로 덱빌딩 로그라이크 게임 **천공의 탑: 신들의 관람석**을 Unity로 만들고 있습니다.
 - 팀 프로젝트 **TeenyMoney**를 AWS에서 Oracle Cloud(OCI)로 이전해 운영하고 있습니다.
 - Spring Legacy + MyBatis로 만든 게시판을 **Spring Boot 3 + JPA**로 다시 만들고 있습니다.
 
@@ -34,6 +35,31 @@ Java·Spring으로 웹 백엔드를 만들고, C++ IOCP로 게임 서버를 공�
 ![Windows IOCP](https://img.shields.io/badge/Windows_IOCP-0078D6?style=flat-square)
 ![C#](https://img.shields.io/badge/C%23-512BD4?style=flat-square)
 ![Unity](https://img.shields.io/badge/Unity-222222?style=flat-square&logo=unity&logoColor=white)
+
+## 진행 중인 개인 프로젝트
+
+### 천공의 탑: 신들의 관람석 — 신들이 등반을 생중계로 지켜보는 덱빌딩 로그라이크
+
+2026.11 ~ 개발 중 · 1인 개발 · Unity 6, C# · [저장소](https://github.com/we5046/project-T/tree/dev)
+
+![천공의 탑: 신들의 관람석 시작 화면](assets/project-t/title.jpg)
+
+탑을 오르는 플레이어를 신들이 인터넷 방송처럼 지켜봅니다. 신들은 플레이어의 전투와 선택에 채팅으로 반응하고 금화를 후원하며, 많이 후원한 신이 관람석 앞줄에 앉습니다.
+
+| 전투와 신들의 관람석 | 선택이 따르는 사건 |
+| :---: | :---: |
+| ![보스 전투를 지켜보는 관람석의 신들과 채팅](assets/project-t/battle.jpg) | ![금화를 품고 자는 새끼 슬라임을 발견한 사건](assets/project-t/event.jpg) |
+| **방을 골라 오르는 층 지도** | **덱을 키우는 카드 팩** |
+| ![5층 지도와 위층으로 가는 계단](assets/project-t/map.jpg) | ![카드 다섯 장이 펼쳐진 카드 팩](assets/project-t/cards.jpg) |
+
+- **게임**: 무기 7종과 카드 270여 장으로 덱을 만드는 턴제 전투, 층 지도·사건·상점·보상
+- **구조**: 전투·런 규칙을 UnityEngine에 의존하지 않는 C# 엔진으로 분리하고, 화면은 엔진이 낸 이벤트만 받아 표시
+- **재현성**: 난수를 쓰임마다 나눠 같은 시드면 같은 탑을 생성
+- **검증**: 웹 프로토타입의 규칙을 C#으로 옮기면서, 같은 시드와 행동으로 두 엔진을 돌려 상태와 난수 호출 수를 자동 비교
+- **데이터**: 카드·적·문구를 Google Sheets에서 관리하고 Unity로 가져올 때 형식 오류를 검사
+- **AI 활용**: 코드와 그림 제작, 테스트에 AI를 본격적으로 활용
+
+<sub>개발 중인 화면이라 실제와 달라질 수 있습니다.</sub>
 
 ## 대표 프로젝트
 
