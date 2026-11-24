@@ -40,7 +40,7 @@ Java·Spring으로 웹 백엔드를 만들고, C++ IOCP로 게임 서버를 공�
 
 ### 천공의 탑: 신들의 관람석 — 신들이 등반을 생중계로 지켜보는 덱빌딩 로그라이크
 
-2026.11 ~ 개발 중 · 1인 개발 · Unity 6, C# · [저장소](https://github.com/we5046/project-T/tree/dev)
+2026.11 ~ 개발 중 · 1인 개발 · Unity 6, C# · 웹 버전 프로토타입: (https://sky-tower-smoky.vercel.app/) 
 
 ![천공의 탑: 신들의 관람석 시작 화면](assets/project-t/title.jpg)
 
